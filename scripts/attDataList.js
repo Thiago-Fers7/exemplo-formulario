@@ -17,7 +17,7 @@ export function attDataList() {
   tbody.innerHTML = '';
   
   for(let i = 0; i < items.length; i++) {
-    const tr = document.createElement('tr');
+    const tr = document.createElement('tr'); // Criando uma tag <tr>
 
     tr.innerHTML = `
       <tr data-id=${items[i].id}>
