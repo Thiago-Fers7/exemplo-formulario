@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: sans-serif;
+}
+
+body > header {
+  text-align: center;
+  padding: 2rem;
+}
+
+main {
+  padding: 1rem;
+}
+
+form {
+  width: 100%;
+  max-width: 1000px;
+  margin: 10px auto;
+}
+
+form fieldset {
+  border: none;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+form fieldset label {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+form fieldset label span {
+  font-size: .9rem;
+}
+
+form fieldset label input {
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  outline: none;
+
+  border: 1px solid rgba(0, 0, 255, 0.315);
+
+  max-width: 500px;
+
+  transition: 0.2s;
+}
+
+form fieldset label input:focus {
+  border-color: rgba(0, 0, 255, 0.459);
+  box-shadow: 0 0 0 2px rgba(24, 248, 248, 0.349)
+}
+
+form fieldset legend {
+  padding: 2rem 0;
+
+  font-weight: 600;
+}
+
+form fieldset button {
+  width: min-content;
+
+  height: 36px;
+  padding: 0 15px;
+
+  cursor: pointer;
+
+  outline: none;
+  border: none;
+
+  text-transform: uppercase;
+
+}
+
+/* TABLE */
+
+table {
+  width: 100%;
+  margin: 50px auto;
+  border-radius: 5px;
+
+  max-width: min-content;
+
+  border-spacing: 0;
+}
+
+table thead {
+  background: rgba(128, 128, 128, 0.185);
+}
+
+table thead tr, table tbody tr {
+  display: block;
+  padding: 0 1rem;
+}
+
+table thead tr td, table tbody tr td {
+  height: min-content;
+
+  padding: 0.7rem;
+
+  margin-left: 1rem;
+
+  min-width: 200px;
+  max-width: 200px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+table tbody tr:hover {
+  background: rgba(0, 0, 0, 0.021);
+}
+
+table thead tr td:last-child, table tbody tr td:last-child {
+  min-width: 32px;
+  max-width: 32px;
+  padding: 0;
+}
+
+button.remove {
+  background: 0;
+  font-size: 0;
+  padding: 4px;
+  border: none;
+
+  cursor: pointer;
+  opacity: 0.3;
+
+  transition: all 0.05s;
+}
+
+button.remove:hover {
+  opacity: 1;
+
+  background-color: rgba(128, 128, 128, 0.178);
+}
